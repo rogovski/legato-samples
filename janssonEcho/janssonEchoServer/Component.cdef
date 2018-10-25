@@ -1,6 +1,24 @@
+cflags:
+{
+	-I/home/mangoh/legato_framework/legato/build/wp750x/framework/libjansson/include
+}
+
+ldflags:
+{
+	-ljansson
+}
+
 sources:
 {
     server.c
+}
+
+requires:
+{
+	file:
+	{
+		/legato/systems/current/lib/libjansson.so /lib/
+	}
 }
 
 provides:
