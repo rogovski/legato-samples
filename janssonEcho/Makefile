@@ -4,8 +4,8 @@ TARGETS := $(MAKECMDGOALS)
 all: $(TARGETS)
 
 $(TARGETS):
-	mkapp -v -t $@ printClient.adef
-	mkapp -v -t $@ printServer.adef
+	mkapp -v -t $@ janssonEchoClient.adef
+	mkapp -v -t $@ janssonEchoServer.adef
 
 clean:
 	rm -rf _build_* *.update

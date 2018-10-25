@@ -1,3 +1,5 @@
+start: manual
+
 executables:
 {
     client = (janssonEchoClient)
@@ -13,5 +15,5 @@ processes:
 
 bindings:
 {
-    client.janssonEchoClient.printer -> janssonEchoServer.printer
+    client.janssonEchoClient.janssonEchoService -> janssonEchoServer.janssonEchoService
 }

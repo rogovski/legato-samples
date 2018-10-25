@@ -1,3 +1,5 @@
+start: manual
+
 executables:
 {
     server = (janssonEchoServer)
@@ -13,6 +15,6 @@ processes:
 
 extern:
 {
-    printer = server.janssonEchoServer.printer
+    janssonEchoService = server.janssonEchoServer.janssonEchoService
 }
 
