@@ -1,0 +1,17 @@
+executables:
+{
+    client = (janssonEchoClient)
+}
+
+processes:
+{
+    run:
+    {
+        (client)
+    }
+}
+
+bindings:
+{
+    client.janssonEchoClient.printer -> janssonEchoServer.printer
+}
